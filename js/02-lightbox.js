@@ -22,10 +22,13 @@ function galleryClick(event) {
   if (event.target.nodeName !== "IMG") {
     return
   };
-    new SimpleLightbox('.gallery a',
+     new SimpleLightbox('.gallery a',
     {
     captionsData: 'alt',
     captionDelay: 250,
-        }
+    }
+   
     );
+  
+    
 };

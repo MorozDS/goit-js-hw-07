@@ -15,20 +15,29 @@ const galleryList = galleryItems.map(item => `
 
 
 listRef.insertAdjacentHTML('beforeend', galleryList);
-listRef.addEventListener('click', galleryClick);
 
-function galleryClick(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== "IMG") {
-    return
-  };
-     new SimpleLightbox('.gallery a',
+const gallery =  new SimpleLightbox('.gallery a',
     {
     captionsData: 'alt',
     captionDelay: 250,
     }
-   
-    );
-  
+);
     
-};
+
+
+// listRef.addEventListener('click', galleryClick);
+// function galleryClick(event) {
+//   event.preventDefault();
+//   if (event.target.nodeName !== "IMG") {
+//     return
+//   };
+    
+// };
+
+//  new SimpleLightbox('.gallery a',
+//     {
+//     captionsData: 'alt',
+//     captionDelay: 250,
+//     }
+   
+//     );
